@@ -91,7 +91,7 @@ console.log(marksBmi, johnsBmi);
 const markHigherBmi = marksBmi > johnsBmi;
 
 console.log(markHigherBmi);
-*/
+
 
 const firstName = "Diana";
 const job = "tester";
@@ -111,17 +111,146 @@ string
 
 
 
+const age = 15;
+//const isOldEnough = age >= 18;
+if (age >= 18) {
+    console.log("Sarah can start driving.");
+} else {
+    const yearsLeft = 18 - age
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years.`);
+}
+
+
+const yearOfBirth = 1991;
+let century;
+if (yearOfBirth <= 2000) {
+    century = 20;
+} else {
+   century = 21;
+}
+console.log(century);
+
+
+//coding challenge 2
+
+const marksWeight = 78;
+const marksHeight = 1.69;
+
+const johnsWeight = 92;
+const jonhnsHeight = 1.95;
+
+const marksBmi = marksWeight / (marksHeight ** 2);
+const johnsBmi = johnsWeight / (jonhnsHeight ** 2);
+console.log(marksBmi, johnsBmi);
+
+
+if(marksBmi > johnsBmi){
+    console.log(`Mark's BMI (${marksBmi}) is higher than John's BMI (${johnsBmi}).`);
+} else{
+    console.log(`John's BMI (${johnsBmi}) is higher than Mark's BMI (${marksBmi}).`);
+}
 
 
 
+// type conversion
+const inputYear = "1992";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Diana"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+ 
+// type coercion
+console.log("I am " + 23 + " years old.");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
+console.log("23" > "18");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+
+//falsy values: 0, "", undefined, null, Nan
+
+const age = 18;
+if (age === 18) console.log("You just became an adult (strict)");
+
+if (age == 18) console.log("You just became an adult (loose)");
+
+const favorite = Number (prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23){
+    console.log("23 is an amazing number.")
+}
+else if (favorite === 7) {
+    console.log("7 is also cool.")
+}
+else if (favorite === 9) {
+    console.log("9 is also cool.")
+}
+else{
+    console.log("Number is not 23 or 7 or 9!")
+}
+
+if (favorite !== 23) console.log("Why not the 23?");
 
 
 
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+ 
+console.log(hasDriversLicense && hasGoodVision); // true and true = true ; true and false = false
+console.log(hasDriversLicense || hasGoodVision); // true or false = true ; 
+console.log(!hasDriversLicense); // inverts the value, true becomes false and vice versa
 
+const shouldDrive = hasDriversLicense && hasGoodVision;
 
+// if(shouldDrive){
+//     console.log("Sarah is able to drive.");
+// }else {
+//     console.log("Someone else should drive.");
+// }
 
+const isTired = true; // C
 
+console.log(hasDriversLicense && hasGoodVision && isTired);
 
+if(hasDriversLicense && hasGoodVision && !isTired){
+    console.log("Sarah is able to drive.");
+}else {
+    console.log("Someone else should drive.");
+}
+*/
 
+// coding challenge 3
+
+let dolphins1 = 150;
+let dolphins2 = 150;
+let dolphins3 = 150;
+let dolphinsAverage = (dolphins1 + dolphins2 + dolphins3) / 3;
+
+let koalas1 = 150;
+let koalas2 = 150;
+let koalas3 = 150;
+let koalasAverage = (koalas1 + koalas2 + koalas3) / 3;
+
+console.log("Dolphins:" + dolphinsAverage, "Koalas:" + koalasAverage);
+
+const minScore = 100;
+if(dolphinsAverage > koalasAverage && dolphinsAverage >= minScore){
+    console.log("Dolphins won!")
+}else if (dolphinsAverage === koalasAverage && dolphinsAverage >= minScore || koalasAverage >= minScore){
+    console.log("It's a tie!");
+}else if (dolphinsAverage > koalasAverage && dolphinsAverage >= minScore){
+    console.log("Koalas won!");
+}
+else {
+    console.log("No winner");
+}
 
 
