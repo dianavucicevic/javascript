@@ -225,7 +225,7 @@ if(hasDriversLicense && hasGoodVision && !isTired){
 }else {
     console.log("Someone else should drive.");
 }
-*/
+
 
 // coding challenge 3
 
@@ -244,13 +244,38 @@ console.log("Dolphins:" + dolphinsAverage, "Koalas:" + koalasAverage);
 const minScore = 100;
 if(dolphinsAverage > koalasAverage && dolphinsAverage >= minScore){
     console.log("Dolphins won!")
-}else if (dolphinsAverage === koalasAverage && dolphinsAverage >= minScore || koalasAverage >= minScore){
+}else if (dolphinsAverage === koalasAverage && dolphinsAverage >= minScore && koalasAverage >= minScore){
     console.log("It's a tie!");
-}else if (dolphinsAverage > koalasAverage && dolphinsAverage >= minScore){
+}else if (koalasAverage > dolphinsAverage && koalasAverage >= minScore){
     console.log("Koalas won!");
 }
 else {
     console.log("No winner");
 }
+*/
 
+const day = "monday";
+
+switch(day){
+    case "monday":
+        console.log("Do the laundry");
+        console.log("Take the dog for the walk");
+        break;
+    case "tuesday":
+        console.log("Visiti grandma");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("Work out");
+        break;
+    case "friday":
+        console.log("Read a book");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy the weekend");
+        break;
+    default:
+        console.log("Not a valid day");                            
+}
 
