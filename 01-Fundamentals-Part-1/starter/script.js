@@ -252,7 +252,7 @@ if(dolphinsAverage > koalasAverage && dolphinsAverage >= minScore){
 else {
     console.log("No winner");
 }
-*/
+
 
 const day = "monday";
 
@@ -279,3 +279,32 @@ switch(day){
         console.log("Not a valid day");                            
 }
 
+
+const age = 23;
+age >= 18 ? console.log("I like to drink wine 🍷") : console.log("I like to drink water 💧");
+// ? - if    : - else
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = "wine 🍷";
+}else {
+    drink2 = "water 💧";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
+*/
+
+ // coding challenge 4
+
+const bill = 100;
+const tip1Percent = 0.2;
+const tip2Percent = 0.15;
+const tip = bill >= 50 && bill <= 300 ? (bill * tip2Percent) : (bill * tip1Percent);
+const total = tip + bill;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total was ${total}.`);
+//console.log("I will tip " + tip + ", for a bill of " + bill + ". Which makes it a total of: " + total);
