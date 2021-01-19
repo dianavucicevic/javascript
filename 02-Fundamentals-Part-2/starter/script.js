@@ -95,19 +95,6 @@ console.log(yearsUntilRetirement (1970, "John"));
 
 // coding challenge
 
-const dolphins1 = 44;
-const dolphins2 = 23;
-const dolphins3 = 71;
-
-const koalas1 = 65;
-const koalas2 = 54;
-const koalas3 = 49;
-
-const dolphinsSum = (dolphins1 + dolphins2 + dolphins3);
-const koalasSum = (koalas1 + koalas2 + koalas3);
-
-const calcAverage = dolphinsSum => dolphinsSum / 3;
-const dolphinsAverage = calcAverage(dolphinsSum);
 
 
 
